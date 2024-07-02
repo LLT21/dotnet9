@@ -1,6 +1,6 @@
 FROM mcr.microsoft.com/dotnet/sdk:9.0-preview AS build
 RUN apt-get update
-RUN apt-get -yqq install clang
+RUN apt-get -yqq install clang zlib1g-dev 
 
 WORKDIR /app
 COPY ./ .
